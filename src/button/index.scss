@@ -18,3 +18,10 @@
   }
 }
 
+.w-btn-theme1{
+  @extend .w-btn-wrapper;
+  @include w-btn-wrapper(red, yellow,50px);
+  @include border-radius(6px);
+}
+
+

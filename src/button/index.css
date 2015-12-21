@@ -154,7 +154,7 @@ td, th {
 .v-margin10 {
   margin: 10px 0px; }
 
-.w-btn-wrapper {
+.w-btn-wrapper, .w-btn-theme1 {
   background-color: #000000;
   color: #FFFFFF;
   height: 50px;
@@ -162,8 +162,17 @@ td, th {
   display: flex;
   align-items: center;
   border-radius: 6px; }
-  .w-btn-wrapper span {
+  .w-btn-wrapper span, .w-btn-theme1 span {
     display: block;
     flex: 1; }
+
+.w-btn-theme1 {
+  background-color: red;
+  color: yellow;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-radius: 6px; }
 
 /*# sourceMappingURL=index.css.map */
