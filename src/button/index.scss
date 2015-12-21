@@ -1,12 +1,16 @@
 @import "../lib/reset";
 @import "../lib/lib";
 
-@mixin w-btn-wrapper($bgcolor,$fontcolor:#000000,$height:30px) {
+@mixin w-btn-wrapper($bgcolor,$fontcolor:#000000,$height:30px,$bordercolor:transparent) {
   @include bg-color($bgcolor);
+  @include flex-display();
   color: $fontcolor;
   height: $height;
   text-align: center;
-  @include flex-display();
+  @if $bordercolor {
+    @include border($bordercolor);
+  }
+
 }
 
 .w-btn-wrapper{
@@ -16,12 +20,67 @@
   span {
     @include flex-item(1)
   }
+  &:active{
+    @include bg-img("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAYAAACd+7GKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAClJREFUeNpi/v//vwMTAwPDfzjBgMpFI/7hFSOT9Y8qRuF3JLoHAQIMAHYtMmRA+CugAAAAAElFTkSuQmCC");
+    background-repeat: repeat-x;
+
+  }
 }
 
-.w-btn-theme1{
+.normal-btn1{
   @extend .w-btn-wrapper;
   @include w-btn-wrapper(red, yellow,50px);
   @include border-radius(6px);
 }
+.normal-btn2{
+  @extend .w-btn-wrapper;
+  @include w-btn-wrapper(#ff7400, #FFF,50px);
+  @include border-radius(6px);
+}
+.normal-btn3{
+  @extend .w-btn-wrapper;
+  @include w-btn-wrapper(#FFF, #ff5000,50px,#ccc);
+  @include border-radius(6px);
+  @include box-shadow-like-border();
+}
+.normal-btn4{
+  @extend .w-btn-wrapper;
+  @include w-btn-wrapper(rgba(47,34,33,.9), #FFF,50px);
+  @include border-radius(6px);
+}
+.normal-btn5{
+  @extend .w-btn-wrapper;
+  @include w-btn-wrapper(#32508e, #FFF,50px);
+  @include border-radius(6px);
+}
+
+
+
+.icon-btn1-left{
+  @extend .normal-btn5;
+  position: relative;
+  &:before{
+    content: 'f';
+    font-size: 30px;
+    font-weight: 800;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+  }
+}
+.icon-btn1-right{
+  @extend .normal-btn5;
+  position: relative;
+  &:after{
+    content: 'f';
+    font-size: 30px;
+    font-weight: 800;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+}
+
+
 
 
