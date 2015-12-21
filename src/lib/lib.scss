@@ -1,0 +1,10 @@
+@import "util";
+.wrapper{
+  max-width: 640px;
+  @include center-block();
+
+}
+
+.v-margin10{
+  margin: 10px 0px;
+}

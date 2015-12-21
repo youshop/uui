@@ -1,0 +1,42 @@
+/*
+Test case
+*/
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+
+.bg {
+  background-color: black; }
+
+.bgimg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: "100px 100px"; }
+
+.bgimg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: "100px 100px";
+  background-image: url("abc"); }
+
+.padding {
+  padding: 5px 5px; }
+
+.flexdisplay {
+  display: flex;
+  align-items: center; }
+
+.flexitem {
+  display: block;
+  flex: 3; }
+
+.centerblock {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem; }
+
+.wrapper {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*# sourceMappingURL=lib.css.map */
