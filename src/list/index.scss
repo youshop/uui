@@ -1,0 +1,224 @@
+@import "../lib/reset";
+@import "../lib/lib";
+
+@mixin ul-style($bgcolor:#FFF,$bordercolor:#CCC,$fontcolor:#000,$highlightcolor:#BBB) {
+
+  & > li.li-item {
+    @include bg-color($bgcolor);
+    color: $fontcolor;
+    padding: 10px 0px;
+    @if $bordercolor {
+      border-bottom: 1px solid $bordercolor;
+      //border-left: 1px solid $bordercolor;
+      //border-right: 1px solid $bordercolor;
+    }
+
+    &:active {
+      @include bg-color($highlightcolor);
+    }
+  }
+  li.li-item:first-of-type {
+    @if $bordercolor {
+      border-top: 1px solid $bordercolor;
+    }
+  }
+
+}
+
+.li-right-icon {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAaCAYAAABozQZiAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAPAAAAGgBUqfUHAAABR0lEQVQ4y53UvUoDQRSG4TfBSgURrBR1BRFRmW6KwUKjGIJNhNyShbdhZ+1v8C8RxCEORBzwCiwEURALwTSxyEmIxmRn98AW88HzHRiYzdzdP04B57SmYLR6JnCywB6wJN+NdT5Kgg+AhpznpGA+CButToAS8C3ZjBQshmzGaHUMFIEvySeBqnV+ZRDONJvNzsE6nwOOgBGJ3oC80eqh7+b2GK0qQAH4lGgCuLLO61gsBbdAHviQaBy4sM6vxmIpqAGbwLtEY0DZOr8Wi6WgDmwArxKNAqfW+a1YLAUeWAdeJBoGDq3z2z233W+s8wvAJTAtUQMoBWEpyAHXXVEtdHMEVICoa3MxmxLuGK3KQwGwCsz+gWcDbzsO9sUh8F8cCntwEvgLJ4UdnAYCZNPC9ubdNLCN92n9/BJBkFdlnV8GMFo9hUKAH3bVnFKX+XH+AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE0LTA3LTIyVDE2OjA3OjQ5KzA4OjAwNCq0NAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNC0wNy0yMlQxNjowNzo0OSswODowMEV3DIgAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAAElFTkSuQmCC) no-repeat right center;
+  background-size: 100%;
+}
+
+.list01 {
+  @include ul-style();
+  li.li-item {
+    position: relative;
+    a {
+      display: block;
+    }
+  }
+  li.li-item:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 38%;
+    width: 0.5em;
+    height: 0.8em;
+    @extend .li-right-icon;
+  }
+}
+
+.list02 {
+  @include ul-style(#FFF, null, #999, rgba(#BBB, 0.5));
+  overflow: hidden;
+  li.li-item {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+    padding: 0px;
+    margin-bottom: 10px;
+    a {
+      display: block;
+      position: relative;
+
+    }
+
+    .img-wrap {
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      position: relative;
+      @include bg-img(http\:\/\/s\.youshop\.com\/ushop\/images\/common/bk\.png, 100% 100%);
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .li-overlay-b {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        @include bg-color(rgba(0, 0, 0, 0.5));
+        color: white;
+        left: 0px;
+        height: 1.5em;
+        line-height: 1.5em;
+        z-index: 1;
+      }
+      .li-overlay-t {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        @include bg-color(rgba(0, 0, 0, 0.5));
+        color: white;
+        left: 0px;
+        height: 1.5em;
+        line-height: 1.5em;
+        z-index: 1;
+      }
+      .li-overlay-l {
+        position: absolute;
+        width: 1.5em;
+        top: 0px;
+        @include bg-color(rgba(0, 0, 0, 0.5));
+        color: white;
+        left: 0px;
+        height: 100%;
+        line-height: 1em;
+        z-index: 1;
+      }
+      .li-overlay-r {
+        position: absolute;
+        width: 1.5em;
+        top: 0px;
+        @include bg-color(rgba(0, 0, 0, 0.5));
+        color: white;
+        right: 0px;
+        height: 100%;
+        line-height: 1em;
+        z-index: 1;
+      }
+    }
+  }
+  li.li-item:nth-of-type(2n) {
+    margin-right: 0px;
+  }
+
+}
+
+.list03 {
+  @include ul-style(#ededed, #d2d2d2, #333333);
+  li.li-item {
+    position: relative;
+    padding: 0px 10px;
+    height: 0;
+    padding-bottom: percentage((100)/3) / 100;
+    &:after {
+      content: '';
+      width: 0.6em;
+      height: 1em;
+      display: inline-block;
+      right: 10px;
+      top: 45%;
+      position: absolute;
+      @extend .li-right-icon;
+    }
+    
+    a {
+      @include flex-display();
+      position: absolute;
+      left: 0px;
+      top: 10px;
+      bottom: 10px;
+      width: 100%;
+      .img-wrap {
+        @include flex-item(1);
+        @include bg-img(http\:\/\/s\.youshop\.com\/ushop\/images\/common/bk\.png, 100% 100%);
+        height: 100%;
+        
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .con-wrap {
+        @include flex-item(2);
+        @include flex-display();
+        flex-flow: column;
+        margin: 0px 10px;
+        height: 100%;
+
+        .li-title{
+          @include flex-item(10);
+          width: 100%;
+        }
+        .li-sub{
+          text-align: left;
+          height: 1.5em;
+          line-height: 1.5em;
+          width: 100%;
+        }
+
+      }
+    }
+
+  }
+}
+
+.list04{
+  @include ul-style();
+  li.li-item{
+    padding: 10px 0px;
+    position: relative;
+  }
+  li.li-item:after{
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 38%;
+    width: 0.5em;
+    height: 0.8em;
+    @extend .li-right-icon;
+  }
+  a{
+    @include flex-display();
+
+    div.img-wrap{
+      width: 50px;
+      height: 50px;
+      @include bg-img();
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    div.con-wrap{
+      @include flex-item(1);
+      padding: 0px 10px;
+    }
+  }
+}

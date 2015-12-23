@@ -80,6 +80,42 @@
     right: 10px;
   }
 }
+.icon-btn1-top{
+  @extend .normal-btn5;
+  position: relative;
+  overflow: hidden;
+  &:before{
+    content: '';
+    font-size: 12px;
+    font-weight: 800;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    @include bg-color(rgba(#32508e,0.5))
+  }
+}
+
+.icon-btn1-bottom{
+  @extend .normal-btn5;
+  position: relative;
+  overflow: hidden;
+  font-size: 30px;
+  &:before{
+    content: '';
+    font-size: 12px;
+    font-weight: 800;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width:100%;
+    height: 50%;
+    text-align: center;
+    @include bg-color(rgba(#32508e,0.9))
+  }
+}
 
 
 
