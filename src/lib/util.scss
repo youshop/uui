@@ -8,7 +8,7 @@ $baseFontSize: 10px !default;
   background-color: $color;
 }
 
-@mixin bg-img($img:'http\:\/\/s\.youshop\.com\/ushop\/images\/common/bk\.png',$size:'0 0') {
+@mixin bg-img($img:'http\:\/\/s\.youshop\.com\/ushop\/images\/common/bk\.png',$size:0 0) {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: $size;

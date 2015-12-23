@@ -1,0 +1,354 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: HiraginoSansGB-W3, 'Hiragino Sans GB', Arial, Monaco, tahoma, arial, sans-serif; }
+
+section, footer, nav, em, mark, p, span, ul, li, ol, h1, h2, h3, h4, input, textarea {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: normal; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+img {
+  border: 0; }
+
+a {
+  background-color: transparent;
+  text-decoration: none; }
+
+a:active, a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background-color: transparent; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  -webkit-tap-highlight-color: transparent; }
+
+button {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+.wrapper {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.v-margin10 {
+  margin: 10px 0px; }
+
+.container {
+  padding: 10px; }
+
+.li-right-icon, .list01 li.li-item:after, .list03 li.li-item:after, .list04 li.li-item:after {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAaCAYAAABozQZiAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAPAAAAGgBUqfUHAAABR0lEQVQ4y53UvUoDQRSG4TfBSgURrBR1BRFRmW6KwUKjGIJNhNyShbdhZ+1v8C8RxCEORBzwCiwEURALwTSxyEmIxmRn98AW88HzHRiYzdzdP04B57SmYLR6JnCywB6wJN+NdT5Kgg+AhpznpGA+CButToAS8C3ZjBQshmzGaHUMFIEvySeBqnV+ZRDONJvNzsE6nwOOgBGJ3oC80eqh7+b2GK0qQAH4lGgCuLLO61gsBbdAHviQaBy4sM6vxmIpqAGbwLtEY0DZOr8Wi6WgDmwArxKNAqfW+a1YLAUeWAdeJBoGDq3z2z233W+s8wvAJTAtUQMoBWEpyAHXXVEtdHMEVICoa3MxmxLuGK3KQwGwCsz+gWcDbzsO9sUh8F8cCntwEvgLJ4UdnAYCZNPC9ubdNLCN92n9/BJBkFdlnV8GMFo9hUKAH3bVnFKX+XH+AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE0LTA3LTIyVDE2OjA3OjQ5KzA4OjAwNCq0NAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNC0wNy0yMlQxNjowNzo0OSswODowMEV3DIgAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAAElFTkSuQmCC) no-repeat right center;
+  background-size: 100%; }
+
+.list01 > li.li-item {
+  background-color: #FFF;
+  color: #000;
+  padding: 10px 0px;
+  border-bottom: 1px solid #CCC; }
+  .list01 > li.li-item:active {
+    background-color: #BBB; }
+.list01 li.li-item:first-of-type {
+  border-top: 1px solid #CCC; }
+.list01 li.li-item {
+  position: relative; }
+  .list01 li.li-item a {
+    display: block; }
+.list01 li.li-item:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 38%;
+  width: 0.5em;
+  height: 0.8em; }
+
+.list02 {
+  overflow: hidden; }
+  .list02 > li.li-item {
+    background-color: #FFF;
+    color: #999;
+    padding: 10px 0px; }
+    .list02 > li.li-item:active {
+      background-color: rgba(187, 187, 187, 0.5); }
+  .list02 li.li-item {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+    padding: 0px;
+    margin-bottom: 10px; }
+    .list02 li.li-item a {
+      display: block;
+      position: relative; }
+    .list02 li.li-item .img-wrap {
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      position: relative;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-image: url(http\:\/\/s\.youshop\.com\/ushop\/images\/common/bk\.png); }
+      .list02 li.li-item .img-wrap img {
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+      .list02 li.li-item .img-wrap .li-overlay-b {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        left: 0px;
+        height: 1.5em;
+        line-height: 1.5em;
+        z-index: 1; }
+      .list02 li.li-item .img-wrap .li-overlay-t {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        left: 0px;
+        height: 1.5em;
+        line-height: 1.5em;
+        z-index: 1; }
+      .list02 li.li-item .img-wrap .li-overlay-l {
+        position: absolute;
+        width: 1.5em;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        left: 0px;
+        height: 100%;
+        line-height: 1em;
+        z-index: 1; }
+      .list02 li.li-item .img-wrap .li-overlay-r {
+        position: absolute;
+        width: 1.5em;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        right: 0px;
+        height: 100%;
+        line-height: 1em;
+        z-index: 1; }
+  .list02 li.li-item:nth-of-type(2n) {
+    margin-right: 0px; }
+
+.list03 > li.li-item {
+  background-color: #ededed;
+  color: #333333;
+  padding: 10px 0px;
+  border-bottom: 1px solid #d2d2d2; }
+  .list03 > li.li-item:active {
+    background-color: #BBB; }
+.list03 li.li-item:first-of-type {
+  border-top: 1px solid #d2d2d2; }
+.list03 li.li-item {
+  position: relative;
+  padding: 0px 10px;
+  height: 0;
+  padding-bottom: 33.33333%; }
+  .list03 li.li-item:after {
+    content: '';
+    width: 0.6em;
+    height: 1em;
+    display: inline-block;
+    right: 10px;
+    top: 45%;
+    position: absolute; }
+  .list03 li.li-item a {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    bottom: 10px;
+    width: 100%; }
+    .list03 li.li-item a .img-wrap {
+      display: block;
+      flex: 1;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-image: url(http\:\/\/s\.youshop\.com\/ushop\/images\/common/bk\.png);
+      height: 100%; }
+      .list03 li.li-item a .img-wrap img {
+        width: 100%;
+        height: 100%; }
+    .list03 li.li-item a .con-wrap {
+      display: block;
+      flex: 2;
+      display: flex;
+      align-items: center;
+      flex-flow: column;
+      margin: 0px 10px;
+      height: 100%; }
+      .list03 li.li-item a .con-wrap .li-title {
+        display: block;
+        flex: 10;
+        width: 100%; }
+      .list03 li.li-item a .con-wrap .li-sub {
+        text-align: left;
+        height: 1.5em;
+        line-height: 1.5em;
+        width: 100%; }
+
+.list04 > li.li-item {
+  background-color: #FFF;
+  color: #000;
+  padding: 10px 0px;
+  border-bottom: 1px solid #CCC; }
+  .list04 > li.li-item:active {
+    background-color: #BBB; }
+.list04 li.li-item:first-of-type {
+  border-top: 1px solid #CCC; }
+.list04 li.li-item {
+  padding: 10px 0px;
+  position: relative; }
+.list04 li.li-item:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 38%;
+  width: 0.5em;
+  height: 0.8em; }
+.list04 a {
+  display: flex;
+  align-items: center; }
+  .list04 a div.img-wrap {
+    width: 50px;
+    height: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 0 0;
+    background-image: url("http://s.youshop.com/ushop/images/common/bk.png"); }
+    .list04 a div.img-wrap img {
+      width: 100%;
+      height: 100%; }
+  .list04 a div.con-wrap {
+    display: block;
+    flex: 1;
+    padding: 0px 10px; }
+
+/*# sourceMappingURL=index.css.map */
