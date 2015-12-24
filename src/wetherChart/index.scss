@@ -1,0 +1,71 @@
+//reset highcharts
+.highcharts-container{
+  .highcharts-axis-labels{
+    display: none;
+  }
+  .highcharts-legend{
+    display: none;
+  }
+  .highcharts-axis{
+    display: none;
+  }
+}
+
+.clear-radius{
+  border-radius: 0px !important;
+}
+#bottomWrapper{
+  padding:0px 0px 5px 0px;
+  border-top: 1px solid #4b92e6;
+
+  li{
+    padding:5px 0px;
+  }
+}
+.bottom-radius{
+  border-radius: 0 0 4px 4px !important;
+}
+#nightWrapper{
+  padding:0px;
+}
+.wether-title{
+  background-color: #2d81e4;
+  color:white;
+  border-radius: 4px 4px 0px 0px;
+  padding-top:10px;
+  ul{
+    list-style: none;
+    margin:0px 0px;
+    padding:0px;
+    display:flex;
+
+    li{
+
+      flex : 1;
+      flex-direction: column;
+      text-align: center;
+
+      span{
+        display: block;
+        font-size:10px;
+      }
+
+      span.border{
+        display: block;
+        width:1px;
+        position: absolute;
+        background-color: #4b92e6;
+        top:0px;
+        bottom:0px;
+        z-index: 100;
+      }
+
+      .icon{
+        transform: scale(0.85);
+      }
+
+    }
+
+  }
+}
+

@@ -1,0 +1,21 @@
+//reset highcharts
+.highcharts-container{
+  .highcharts-title{
+    display: none;
+  }
+  svg>text{
+    display: none;
+  }
+}
+.rainchart-wrapper{
+   background-image: url(../../images/rain/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+
+  p{
+    color: #FFF;
+    font-size:25px;
+    //border-bottom: 1px solid #9fbdc4;
+  }
+}

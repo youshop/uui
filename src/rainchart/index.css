@@ -1,0 +1,15 @@
+.highcharts-container .highcharts-title {
+  display: none; }
+.highcharts-container svg > text {
+  display: none; }
+
+.rainchart-wrapper {
+  background-image: url(../../images/rain/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px; }
+  .rainchart-wrapper p {
+    color: #FFF;
+    font-size: 25px; }
+
+/*# sourceMappingURL=index.css.map */

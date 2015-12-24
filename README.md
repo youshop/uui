@@ -1,5 +1,5 @@
 # uui为Youshop UI 组件
-包括Button，List，Form（TODO），以及相关UI控件，如slide，rate，chart，checkbox，等在项目和工作中遇到的相关内容，抽离出来。
+包括Button，List，以及相关UI控件，如footer，rate，slide,chart，checkbox，等在项目和工作中遇到的相关内容，抽离出来。后续会逐步完善。
 
 ## 开发思路
 * 做为前端开发人员来说，在项目中我们难免会遇到重复的组件和UI，为了避免重复的工作和统一的格式，我们有必要进行一次梳理
@@ -20,9 +20,29 @@
 * button
 	- index.html
 	- index.scss
+* checkbox ：变态的checkbox，有选中，未选，部分选中
+	- index.html ：demo
+	- index.js ：实现逻辑
+* footer : 统一footer tab样式
+	- index.html :demo
+	- index.js : footer 可配置
+* rainchart : 降雨量报表控件 依赖Highchart
+	- index.html : demo
+	- index.js 
+* rate : 评分控件，可编辑
+	- index.html : demo
+	- index.js 
 * list
 	- index.html
 	- index.scss
+* srollto : 滚动到指定位置或元素
+	- index.js
+* slide ： mobile 的slide menu 依赖 ISCROLL
+	- test.html : demo
+	- index.js
+* swiper ： 照片墙
+* wetherChart : 天气预报图表控件，依赖Highchart
+* zoom ： JS控制DOM放大和缩小
 	
 ## 方法API
 * border(color);
